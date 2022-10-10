@@ -1,0 +1,100 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.banner
+  background-color: #CBDCFF
+  height: 44px
+  &
+    p
+      margin-left: 10px
+
+.catalog-title
+  font-size: 28px
+  color: #2D3132
+
+.catalog
+  margin-top: 20px
+
+  &__content
+    // background: rgba(136, 136, 136, 0.118)
+
+  &__filters
+    padding-right: 20px
+  &
+    .row
+      margin-left: 0
+      margin-right: 0
+
+  &__filters
+    h3
+      color: #5C5F60
+      font-size: 22px
+      margin-bottom: 0
+      font-weight: normal
+
+  &__filters
+    .accordion
+      margin-top: 25px
+      border-radius: 0px
+      .option-gender
+        input
+          width: 16px
+          height: 16px
+          &:checked
+            background-color: #2D3132
+            border-color: #2D3132
+        p, label
+          font-size: 14px
+          color: #2D3132
+
+.accordion-button
+  background-color: #EFF1F1 !important
+  border-radius: 0px !important
+  color: #444748
+  font-size: 14px
+
+.accordion-item
+  border-radius: 0px !important
+  border: 3px solid #EFF1F1
+
+  & + .accordion-item
+    margin-top: 2px
+
+.accordion-button:not(.collapsed)
+  color: #444748
+
+.accordion-button::after
+  background-image: var(--bs-accordion-btn-icon) !important
+
+.accordion-button:focus
+  box-shadow: 0 0 0 0.25rem #4447483d
+
+.form-range
+  &::-webkit-slider-thumb
+    width: 16px
+    height: 16px
+    border-radius: 4px
+    background: #5C5F60
+
+.catalog__filters-price
+  div + div
+    margin-left: 24px
+  div
+    input
+      padding-top: 14px
+      padding-bottom: 14px
+      border: none
+      outline: none
+      border-bottom: 1px solid #C4C7C7
+      color: #2D3132
+      font-size: 12px
+    label
+      font-size: 10px
+      color: #747778
+
+@import './sass/nav'
+@import './sass/catalog-content'
+@import './sass/pagination'
+@import './sass/footer'

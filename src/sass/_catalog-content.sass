@@ -1,0 +1,114 @@
+.catalog__content
+  &-sort
+    font-size: 12px
+    label
+      color: #5C5F60
+      margin-right: 12px
+    button
+      width: 170px
+      height: 34px
+      background: #EFF1F1
+      outline: none
+      border: none
+      color: #2D3132
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-radius: 100px
+      div
+        background: #EFF1F1
+        display: inline-block
+        width: 30px
+        height: 100%
+        display: flex
+        justify-content: center
+        border-radius: 0 100px 100px 0
+        border-left: 1px solid #fff
+        align-items: center
+        &:nth-child(1)
+          border-radius: 100px 0 0 100px
+  &-list
+    margin-top: 15px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 20px
+    .card
+      border: 1px solid #EFF1F1
+      border-radius: 4px
+      padding: 20px
+      &-header
+        border: none
+        background: transparent
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0
+        svg
+          cursor: pointer
+        div
+          min-height: 23px
+          span
+            border-radius: 4px
+            padding: 4px 8px
+            display: inline-block
+            background: #E0E3E3
+            font-size: 10px
+            color: #2D3132
+      .card-img-top
+        width: 207px
+        display: block
+        margin: 0 auto
+      &-body
+        padding: 0
+        .catalog__list-top
+          width: 38px
+          height: 23px
+          margin-bottom: 16px
+          span
+            height: 100%
+            border-radius: 4px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 10px
+            color: #00382F
+            background: #B4FFF0
+        .card-subtitle
+          margin-bottom: 4px
+          color: #5C5F60
+          font-size: 10px
+          font-weight: 500
+        .card-title
+          font-size: 14px
+          color: #2D3132
+      &-footer
+        border: none
+        background: transparent
+        display: flex
+        justify-content: space-between
+        padding: 0
+        margin-top: 20px
+        .catalog__list-from
+          div
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            p, h6
+              margin-left: 8px
+            h6
+              font-size: 14px
+              color: #2D3132
+            p
+              font-size: 12px
+              color: #2D3132
+          div + div
+            margin-top: 4px
+        .catalog__list-price
+          span
+            color: #747778
+            font-size: 12px
+            text-decoration: line-through
+          p
+            color: #2D3132
+            font-size: 14px
+            font-weight: 500
